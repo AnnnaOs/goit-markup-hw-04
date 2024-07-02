@@ -104,10 +104,6 @@ img {
 .nav-link-act {
   position: relative;
   color: #404bbf;
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 0; */
 }
 
 .nav-link-act::after {

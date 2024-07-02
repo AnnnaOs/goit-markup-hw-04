@@ -41,6 +41,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -100,14 +102,18 @@ img {
 }
 
 .nav-link-act {
+  position: relative;
   color: #404bbf;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 0;
+  padding-bottom: 0; */
 }
 
 .nav-link-act::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   display: block;
   width: 48px;
   height: 4px;
@@ -144,6 +150,8 @@ img {
 
 .hero {
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #2e2f42;
   background-image: linear-gradient(
       to bottom,
@@ -153,11 +161,10 @@ img {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px 600px;
+  background-size: cover;
 }
 
 .hero-container {
-  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -240,6 +247,7 @@ img {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
 
 .section-title {
@@ -353,7 +361,7 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   background-color: #4d5ae5;
 }
 
@@ -386,7 +394,8 @@ img {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  margin-right: 120px;
+  align-items: baseline;
 }
 
 .footer-link {
